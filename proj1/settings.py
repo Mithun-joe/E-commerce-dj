@@ -25,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+1w7mmu^$v79vfe9=(5z!s+b-97i(nfa^*ezepo*@sk3e_t)po'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django_countries',
     'allauth.account',
     'allauth.socialaccount',
-    'proj1.apps.SuitConfig',
 ]
 
 MIDDLEWARE = [
