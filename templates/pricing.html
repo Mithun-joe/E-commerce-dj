@@ -1,0 +1,205 @@
+
+
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+
+  <!--Main layout-->
+  <main >
+    <div class="container wow fadeIn">
+
+      <h3 class="my-5 h3 text-center">Our pricing plans</h3>
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-8 text-center">
+
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui laboriosam nihil
+            reiciendis fugit eius nostrum
+            ipsum odio, voluptate debitis laborum perspiciatis voluptatibus? Culpa expedita rem totam eos fugit atque!</p>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <!--Grid row-->
+      <div class="row text-center wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">
+              <h4>
+                <strong>Free</strong>
+              </h4>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <h3 class="card-title pricing-card-title mb-4">$0
+                <small class="text-muted">/ mo</small>
+              </h3>
+
+              <ol class="list-unstyled mb-4">
+                <li>10 users included
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>2 GB of storage
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Email support
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Help center access
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+              </ol>
+              <a type="button" class="btn btn-lg btn-block btn-outline-primary waves-effect" href="{% url 'home' %}">Sign up for free</a>
+              
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">
+              <h4>
+                <strong>Pro</strong>
+              </h4>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <h3 class="card-title pricing-card-title mb-4">$15
+                <small class="text-muted">/ mo</small>
+              </h3>
+
+              <ol class="list-unstyled mb-4">
+                <li>20 users included
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>10 GB of storage
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Priority email support
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Help center access
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+              </ol>
+
+              <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">
+              <h4>
+                <strong>Enterprise</strong>
+              </h4>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <h3 class="card-title pricing-card-title mb-4">$29
+                <small class="text-muted">/ mo</small>
+              </h3>
+
+              <ol class="list-unstyled mb-4">
+                <li>30 users included
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>15 GB of storage
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Phone and email support
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+                <hr>
+                <li>Help center access
+                  <i class="fas fa-check green-text ml-1"></i>
+                </li>
+              </ol>
+
+              <button type="button" class="btn btn-lg btn-block btn-primary waves-effect">Get started</button>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+  <br>
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+  {% endblock content %}
+</body>
+
+</html>

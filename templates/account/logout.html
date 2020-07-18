@@ -1,0 +1,36 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Log Out" %}{% endblock %}
+
+{% block content %}
+
+<main>
+  <div class="container">
+
+
+    <!--Section: Products v.3-->
+    <section class="mb-5"><br><br>
+      <div class="row wow fadeIn">
+        <div class = 'col-7 offset-2 '>
+          <h1>{% trans "Log Out" %}</h1>
+
+          <p>{% trans 'Are you sure you want to Log out?' %}</p><br>
+
+          <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+            {% endif %}
+            <button class="btn btn-danger" type="submit">{% trans 'Log Out' %}</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}
